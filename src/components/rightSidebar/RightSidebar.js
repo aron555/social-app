@@ -8,8 +8,7 @@ export default function RightSidebar(props) {
 	return (
 		<div id="middle1" className="right-sidebar right_sidebar_profile">
 			<div className="right-sidebar-wrap active">
-				<div className="slimScrollDiv"
-				>
+				<div className="slimScrollDiv">
 					<div className="slimscroll">
 						<div
 							className="left-chat-title d-flex justify-content-between align-items-center p-3">
@@ -73,11 +72,11 @@ export default function RightSidebar(props) {
 														</li>
 														<li>
 															<h6>Никнейм</h6>
-															<span>Alberywo</span>
+															<span>durov</span>
 														</li>
 														<li>
 															<h6>Email</h6>
-															<span>Alberywo@gmail.com</span>
+															<span>durov@gmail.com</span>
 														</li>
 													</ul>
 												</div>
@@ -107,15 +106,17 @@ export default function RightSidebar(props) {
 															className="switch"><input
 															type="checkbox" checked=""/><span
 															className="slider round"></span></label>
-															<div><span
-															>Block</span></div>
+															<div>
+																<span>Заблокировать</span>
+															</div>
 														</li>
 														<li className="d-flex align-items-center"><label
 															className="switch"><input
 															type="checkbox"/><span
 															className="slider round"></span></label>
-															<div><span
-															>Mute</span></div>
+															<div>
+																<span>Без взука</span>
+															</div>
 														</li>
 														<li className="d-flex align-items-center"><label
 															className="switch"><input
@@ -261,7 +262,7 @@ export default function RightSidebar(props) {
 															</div>
 														</li>
 														<li className="full-width text-center"><a
-															className="load-more-btn">More 154 Files
+															className="load-more-btn">Более 154 км
 															<i className="fas fa-sort-down"></i></a></li>
 													</ul>
 												</div>
@@ -273,18 +274,21 @@ export default function RightSidebar(props) {
 						</div>
 						<div className="report-col">
 							<ul>
-								<li><a><span
-									className="material-icons">report_problem</span>
-									Report Chat</a></li>
-								<li><a><span><i
-									className="far fa-trash-alt"></i></span> Delete Chat</a></li>
+								<li><a>
+									<span className="material-icons">report_problem</span>
+									Пожаловаться
+								</a>
+								</li>
+								<li>
+									<a>
+										<span>
+									<i className="far fa-trash-alt"></i>
+								</span> Удалить чат
+									</a>
+								</li>
 							</ul>
 						</div>
 					</div>
-					<div className="slimScrollBar"
-					></div>
-					<div className="slimScrollRail"
-					></div>
 				</div>
 			</div>
 		</div>

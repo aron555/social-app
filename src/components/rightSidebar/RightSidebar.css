@@ -4,7 +4,7 @@
 	flex-direction: column;
 	-webkit-flex-direction: column;
 	background-color: #FAFBFF;
-	opacity: 100%;
+	opacity: 1;
 	transition: all 0.5s ease;
 	-webkit-transition: all 0.5s ease;
 	-ms-transition: all 0.5s ease;
@@ -16,7 +16,6 @@
 .right_sidebar_profile {
 	margin-top: -15px;
 }
-
 .right_sidebar_profile .right-sidebar-wrap {
 	background-color: #fff;
 	border: 1px solid #F4EEFF;
