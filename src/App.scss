@@ -18,8 +18,10 @@ body {
 
 .slimScrollDiv {
   position: relative;
-  overflow: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
   width: 100%;
+  height: 100%;
 }
 
 .slimScrollDiv::-webkit-scrollbar {
@@ -46,6 +48,7 @@ body {
   .content {
 	display: flex;
 	display: -webkit-flex;
+	width: 100%;
   }
 }
 
@@ -127,70 +130,6 @@ a {
 	height: 10px;
 	border: 2px solid #fff;
 	border-radius: 50px;
-  }
-}
-
-.chats {
-  display: block;
-  width: 100%;
-  float: left;
-  margin-bottom: 10px;
-}
-
-.chats.chats-right {
-  margin-left: auto;
-
-  .chat-content {
-	order: 1;
-	-webkit-order: 1;
-  }
-
-  .message-content {
-	background-color: #E8EFFF;
-	color: #232323;
-	border-radius: 20px 20px 0 20px;
-  }
-
-  .chat-time {
-	justify-content: flex-start;
-	-webkit-justify-content: flex-start;
-  }
-
-  .time {
-	color: #909090;
-  }
-
-  svg {
-	color: #A3C2FF;
-  }
-
-  .chat-avatar {
-	padding: 8px 0px 0 15px;
-  }
-
-  .chat-action-btns {
-	order: 2;
-	-webkit-order: 2;
-	display: flex;
-	display: -webkit-flex;
-	flex-wrap: wrap;
-	-webkit-flex-wrap: wrap;
-	justify-content: center;
-	-webkit-justify-content: center;
-  }
-
-  .chat .chat-body .messages .chats.chats-right .chat-action-btns .chat-action-col {
-	width: 100%;
-	text-align: center;
-  }
-
-  .chat-read-col {
-	display: flex;
-	display: -webkit-flex;
-	align-items: flex-end;
-	-webkit-align-items: flex-end;
-	padding-bottom: 22px;
-	color: #008024;
   }
 }
 

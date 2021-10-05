@@ -14,7 +14,7 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faEdit, faMoon, faPlus, faIdCardAlt} from '@fortawesome/free-solid-svg-icons';
 
 
-export default function SidebarMenu(props) {
+export default function SidebarMenu() {
 	return (
 		<div className="sidebarMenu">
 			<div className="logo-col">
@@ -34,7 +34,10 @@ export default function SidebarMenu(props) {
 							</a>
 						</li>
 						<li>
-							<a href="">
+							<a
+								className="chat-unread pink"
+								href=""
+							>
 								<GroupIcon/><span>Группы</span>
 							</a>
 						</li>

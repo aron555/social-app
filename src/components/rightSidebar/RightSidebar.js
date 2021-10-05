@@ -1,10 +1,18 @@
 import React from "react";
 import "./RightSidebar.css";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {Close} from "@material-ui/icons";
+import {
+	faYoutube,
+	faInstagram,
+	faFacebookF,
+	faTwitter, faVk
+} from '@fortawesome/free-brands-svg-icons';
+
+import {Close, ReportProblem} from "@material-ui/icons";
+import {faCloudDownloadAlt, faEllipsisH, faSortDown, faTrashAlt} from "@fortawesome/free-solid-svg-icons";
 
 
-export default function RightSidebar(props) {
+export default function RightSidebar() {
 	return (
 		<div id="middle1" className="right-sidebar right_sidebar_profile">
 			<div className="right-sidebar-wrap active">
@@ -80,49 +88,64 @@ export default function RightSidebar(props) {
 														</li>
 													</ul>
 												</div>
-												<div className="social-media-col"><h6
-												>Соц сети</h6>
+												<div className="social-media-col">
+													<h6>Соц сети</h6>
 													<ul>
 														<li>
 															<a>
-																<i className="fab fa-facebook-f"></i>
+																<FontAwesomeIcon icon={faFacebookF}/>
 															</a>
 														</li>
-														<li><a><i
-															className="fab fa-twitter"></i></a></li>
-														<li><a><i
-															className="fab fa-youtube"></i></a></li>
-														<li><a><i
-															className="fab fa-instagram"></i></a></li>
-														<li><a><i
-															className="fab fa-linkedin-in"></i></a>
+														<li>
+															<a>
+																<FontAwesomeIcon icon={faTwitter}/>
+															</a>
+														</li>
+														<li>
+															<a>
+																<FontAwesomeIcon icon={faYoutube}/>
+															</a>
+														</li>
+														<li>
+															<a>
+																<FontAwesomeIcon icon={faInstagram}/>
+															</a>
+														</li>
+														<li>
+															<a>
+																<FontAwesomeIcon icon={faVk}/>
+															</a>
 														</li>
 													</ul>
 												</div>
-												<div className="settings-col"><h6>
-													Settings</h6>
+												<div className="settings-col">
+													<h6>Настройки</h6>
 													<ul>
-														<li className="d-flex align-items-center"><label
-															className="switch"><input
-															type="checkbox" checked=""/><span
-															className="slider round"></span></label>
+														<li className="d-flex align-items-center">
+															<label className="switch">
+																<input type="checkbox" defaultChecked/>
+																<span className="slider round"></span>
+															</label>
 															<div>
 																<span>Заблокировать</span>
 															</div>
 														</li>
-														<li className="d-flex align-items-center"><label
-															className="switch"><input
-															type="checkbox"/><span
-															className="slider round"></span></label>
+														<li className="d-flex align-items-center">
+															<label className="switch">
+																<input type="checkbox"/>
+																<span className="slider round"></span>
+															</label>
 															<div>
 																<span>Без взука</span>
 															</div>
 														</li>
-														<li className="d-flex align-items-center"><label
-															className="switch"><input
-															type="checkbox"/><span
-															className="slider round"></span></label>
-															<div><span>Получать уведомления</span>
+														<li className="d-flex align-items-center">
+															<label className="switch">
+																<input type="checkbox"/>
+																<span className="slider round"></span>
+															</label>
+															<div>
+																<span>Получать уведомления</span>
 															</div>
 														</li>
 													</ul>
@@ -137,20 +160,18 @@ export default function RightSidebar(props) {
 																	href="assets/img/chat-download.jpg"
 																	data-fancybox="gallery"
 																	className="fancybox">
-																	<img
-																		src="assets/img/chat-download.jpg"
-																		alt=""/>
+																	<img src="assets/img/chat-download.jpg" alt=""/>
 																</a>
 																<div
 																	className="download-action d-flex align-items-center">
 																	<div>
 																		<a>
-																			<i className="fas fa-cloud-download-alt"></i>
+																			<FontAwesomeIcon icon={faCloudDownloadAlt}/>
 																		</a>
 																	</div>
 																	<div>
 																		<a>
-																			<i className="fas fa-ellipsis-h"></i>
+																			<FontAwesomeIcon icon={faEllipsisH}/>
 																		</a>
 																	</div>
 																</div>
@@ -161,109 +182,124 @@ export default function RightSidebar(props) {
 																<a
 																	href="assets/img/chat-download.jpg"
 																	data-fancybox="gallery"
-																	className="fancybox">
+																	className="fancybox"
+																>
 																	<img src="assets/img/chat-download.jpg" alt=""/>
 																</a>
 																<div
 																	className="download-action d-flex align-items-center">
-																	<div><a><i
-
-																		className="fas fa-cloud-download-alt"></i></a>
+																	<div>
+																		<a>
+																			<FontAwesomeIcon icon={faCloudDownloadAlt}/>
+																		</a>
 																	</div>
-																	<div><a><i
-
-																		className="fas fa-ellipsis-h"></i></a>
-																	</div>
-																</div>
-															</div>
-														</li>
-														<li>
-															<div className="image-download-col"><a
-
-																href="assets/img/chat-download.jpg"
-																data-fancybox="gallery"
-																className="fancybox"><img
-																src="assets/img/chat-download.jpg"
-																alt=""/></a>
-																<div
-																	className="download-action d-flex align-items-center">
-																	<div><a><i
-
-																		className="fas fa-cloud-download-alt"></i></a>
-																	</div>
-																	<div><a><i
-
-																		className="fas fa-ellipsis-h"></i></a>
+																	<div>
+																		<a>
+																			<FontAwesomeIcon icon={faEllipsisH}/>
+																		</a>
 																	</div>
 																</div>
 															</div>
 														</li>
 														<li>
-															<div className="image-download-col"><a
-
-																href="assets/img/chat-download.jpg"
-																data-fancybox="gallery"
-																className="fancybox"><img
-																src="assets/img/chat-download.jpg"
-																alt=""/></a>
+															<div className="image-download-col">
+																<a
+																	href="assets/img/chat-download.jpg"
+																	data-fancybox="gallery"
+																	className="fancybox"
+																>
+																	<img
+																		src="assets/img/chat-download.jpg"
+																		alt=""
+																	/>
+																</a>
 																<div
 																	className="download-action d-flex align-items-center">
-																	<div><a><i
-
-																		className="fas fa-cloud-download-alt"></i></a>
+																	<div>
+																		<a>
+																			<FontAwesomeIcon icon={faCloudDownloadAlt}/>
+																		</a>
 																	</div>
-																	<div><a><i
-
-																		className="fas fa-ellipsis-h"></i></a>
+																	<div>
+																		<a>
+																			<FontAwesomeIcon icon={faEllipsisH}/>
+																		</a>
 																	</div>
 																</div>
 															</div>
 														</li>
 														<li>
-															<div className="image-download-col"><a
-
-																href="assets/img/chat-download.jpg"
-																data-fancybox="gallery"
-																className="fancybox"><img
-																src="assets/img/chat-download.jpg"
-																alt=""/></a>
+															<div className="image-download-col">
+																<a href="assets/img/chat-download.jpg"
+																   data-fancybox="gallery"
+																   className="fancybox">
+																	<img src="assets/img/chat-download.jpg" alt=""/>
+																</a>
 																<div
 																	className="download-action d-flex align-items-center">
-																	<div><a><i
-
-																		className="fas fa-cloud-download-alt"></i></a>
+																	<div>
+																		<a>
+																			<FontAwesomeIcon icon={faCloudDownloadAlt}/>
+																		</a>
 																	</div>
-																	<div><a><i
-
-																		className="fas fa-ellipsis-h"></i></a>
+																	<div>
+																		<a>
+																			<FontAwesomeIcon icon={faEllipsisH}/>
+																		</a>
 																	</div>
 																</div>
 															</div>
 														</li>
 														<li>
-															<div className="image-download-col"><a
-
-																href="assets/img/chat-download.jpg"
-																data-fancybox="gallery"
-																className="fancybox"><img
-																src="assets/img/chat-download.jpg"
-																alt=""/></a>
+															<div className="image-download-col">
+																<a href="assets/img/chat-download.jpg"
+																   data-fancybox="gallery"
+																   className="fancybox">
+																	<img src="assets/img/chat-download.jpg" alt=""/>
+																</a>
 																<div
 																	className="download-action d-flex align-items-center">
-																	<div><a><i
-
-																		className="fas fa-cloud-download-alt"></i></a>
+																	<div>
+																		<a>
+																			<FontAwesomeIcon icon={faCloudDownloadAlt}/>
+																		</a>
 																	</div>
-																	<div><a><i
-
-																		className="fas fa-ellipsis-h"></i></a>
+																	<div>
+																		<a>
+																			<FontAwesomeIcon icon={faEllipsisH}/>
+																		</a>
 																	</div>
 																</div>
 															</div>
 														</li>
-														<li className="full-width text-center"><a
-															className="load-more-btn">Более 154 км
-															<i className="fas fa-sort-down"></i></a></li>
+														<li>
+															<div className="image-download-col">
+																<a href="assets/img/chat-download.jpg"
+																   data-fancybox="gallery"
+																   className="fancybox">
+																	<img src="assets/img/chat-download.jpg" alt=""/>
+																</a>
+																<div
+																	className="download-action d-flex align-items-center">
+																	<div>
+																		<a>
+																			<FontAwesomeIcon icon={faCloudDownloadAlt}/>
+																		</a>
+																	</div>
+																	<div>
+																		<a>
+																			<FontAwesomeIcon icon={faEllipsisH}/>
+																		</a>
+																	</div>
+																</div>
+															</div>
+														</li>
+														<li className="full-width text-center">
+															<a className="load-more-btn">
+																Более 154 км
+																<FontAwesomeIcon icon={faSortDown}/>
+															</a>
+														</li>
 													</ul>
 												</div>
 											</div>
@@ -274,16 +310,16 @@ export default function RightSidebar(props) {
 						</div>
 						<div className="report-col">
 							<ul>
-								<li><a>
-									<span className="material-icons">report_problem</span>
-									Пожаловаться
-								</a>
+								<li>
+									<a>
+										<ReportProblem/>
+										Пожаловаться
+									</a>
 								</li>
 								<li>
 									<a>
-										<span>
-									<i className="far fa-trash-alt"></i>
-								</span> Удалить чат
+										<span><FontAwesomeIcon icon={faTrashAlt}/></span>
+										Удалить чат
 									</a>
 								</li>
 							</ul>
