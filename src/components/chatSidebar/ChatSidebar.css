@@ -6,11 +6,6 @@
   z-index: 99;
   width: 379px;
 }
-.sidebar-group .slimScrollDiv {
-  position: relative;
-  overflow: auto;
-  width: 100%;
-}
 .sidebar-group .sidebar {
   background: #FAFBFF;
   overflow: hidden;
@@ -41,25 +36,6 @@
   max-width: 100%;
   height: auto;
   border-radius: 5px;
-}
-
-.online {
-  color: var(--third);
-  font-weight: 500;
-}
-.online:before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  bottom: -5px;
-  background-color: #49E073;
-  width: 10px;
-  height: 10px;
-  border: 2px solid #fff;
-  border-radius: 50px;
 }
 
 .profile-name {

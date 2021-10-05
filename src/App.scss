@@ -16,6 +16,12 @@ body {
   padding-left: 85px;
 }
 
+.slimScrollDiv {
+  position: relative;
+  overflow: auto;
+  width: 100%;
+}
+
 .slimScrollDiv::-webkit-scrollbar {
   width: 7px;
 }
@@ -102,4 +108,120 @@ ul {
 
 a {
   cursor: pointer;
+}
+
+.online {
+  color: var(--third);
+  font-weight: 500;
+
+  &:before {
+	content: "";
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	bottom: -5px;
+	background-color: #49E073;
+	width: 10px;
+	height: 10px;
+	border: 2px solid #fff;
+	border-radius: 50px;
+  }
+}
+
+.chats {
+  display: block;
+  width: 100%;
+  float: left;
+  margin-bottom: 10px;
+}
+
+.chats.chats-right {
+  margin-left: auto;
+
+  .chat-content {
+	order: 1;
+	-webkit-order: 1;
+  }
+
+  .message-content {
+	background-color: #E8EFFF;
+	color: #232323;
+	border-radius: 20px 20px 0 20px;
+  }
+
+  .chat-time {
+	justify-content: flex-start;
+	-webkit-justify-content: flex-start;
+  }
+
+  .time {
+	color: #909090;
+  }
+
+  svg {
+	color: #A3C2FF;
+  }
+
+  .chat-avatar {
+	padding: 8px 0px 0 15px;
+  }
+
+  .chat-action-btns {
+	order: 2;
+	-webkit-order: 2;
+	display: flex;
+	display: -webkit-flex;
+	flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+	justify-content: center;
+	-webkit-justify-content: center;
+  }
+
+  .chat .chat-body .messages .chats.chats-right .chat-action-btns .chat-action-col {
+	width: 100%;
+	text-align: center;
+  }
+
+  .chat-read-col {
+	display: flex;
+	display: -webkit-flex;
+	align-items: flex-end;
+	-webkit-align-items: flex-end;
+	padding-bottom: 22px;
+	color: #008024;
+  }
+}
+
+.dropdown-menu {
+  background: #FFFFFF;
+  border: 1px solid #F7F7F7;
+  box-sizing: border-box;
+  box-shadow: 4px 4px 4px rgb(200 198 198 / 25%);
+  border-radius: 4px;
+  min-width: 150px;
+  padding: 0;
+
+  .dropdown-item {
+	margin: 8px 0;
+	position: relative;
+	font-size: 14px;
+	cursor: pointer;
+	padding: 7px 14px;
+	font-weight: 500;
+	color: #232323;
+
+	span {
+	  position: absolute;
+	  right: 14px;
+	  top: 50%;
+	  transform: translateY(-50%);
+	  -webkit-transform: translateY(-50%);
+	  -ms-transform: translateY(-50%);
+	  float: right;
+	  font-size: 18px;
+	  color: var(--primary);
+	}
+  }
 }

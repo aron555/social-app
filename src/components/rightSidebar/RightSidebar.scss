@@ -1,0 +1,27 @@
+.right-sidebar {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  background-color: #FAFBFF;
+  opacity: 100%;
+  transition: all .5s ease;
+  -webkit-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  position: relative;
+  width: 320px;
+  padding: 15px 20px 0;
+}
+
+.right_sidebar_profile {
+  margin-top: -15px;
+
+  .right-sidebar-wrap {
+	background-color: #fff;
+	border: 1px solid #F4EEFF;
+	border-radius: 5px;
+	margin-top: 10px;
+	margin-bottom: 15px;
+	height: calc(100vh - 10px);
+  }
+}
