@@ -26,7 +26,10 @@ export default function SidebarMenu(props) {
 				<div className="chat-menus">
 					<ul>
 						<li>
-							<a className="chat-unread blue" href="/template2/chat/chat-main">
+							<a
+								className="chat-unread blue"
+								href="/template2/chat/chat-main"
+							>
 								<MessageIcon/><span>Чаты</span>
 							</a>
 						</li>
@@ -67,6 +70,7 @@ export default function SidebarMenu(props) {
 						<li>
 							<a id="dark-mode-toggle" className="dark-mode-toggle">
 								<FontAwesomeIcon icon={faMoon}/>
+								<span>Сменить режим</span>
 							</a>
 						</li>
 						<li>

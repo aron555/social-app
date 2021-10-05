@@ -707,17 +707,14 @@ function App(props) {
 						</div>
 					</div>
 
-					<Header text='Site'/>
-					<aside className="aside">
-						<Nav/>
-						<LastDialogs/>
-					</aside>
-					<button className='btn btn-primary'> Примари <FontAwesomeIcon
-						icon={faChevronDown}/>
-					</button>
-
 				</div>
-
+			</div>
+			<div>
+				<Header text='Site'/>
+				<aside className="aside">
+					<Nav/>
+					<LastDialogs/>
+				</aside>
 			</div>
 		</div>
 	);

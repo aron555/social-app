@@ -8,11 +8,92 @@
 	--link_hover_color: #DE2FCF;
 }
 
+body {
+	background-color: #fff;
+	font-family: "Poppins", sans-serif;
+	font-size: 14px;
+	overflow-x: hidden;
+	padding-left: 85px;
+}
+
+.slimScrollDiv::-webkit-scrollbar {
+	width: 7px;
+}
+
+.slimScrollDiv::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.slimScrollDiv::-webkit-scrollbar-thumb {
+	background: #cccccc;
+	border-radius: 7px;
+	opacity: 0.379606;
+	outline: 1px solid #cccccc;
+}
+
 .main-wrapper {
 	height: 100vh;
 	display: flex;
 	display: -webkit-flex;
 	overflow: hidden;
+}
+
+.main-wrapper .content {
+	display: flex;
+	display: -webkit-flex;
+}
+
+ul li a span {
+	opacity: 0;
+	visibility: hidden;
+	position: absolute;
+	left: 120%;
+	top: 50%;
+	background-color: var(--primary);
+	box-shadow: 4px 4px 4px rgba(200, 198, 198, 0.25);
+	border-radius: 2px;
+	display: inline-block;
+	padding: 6px 19px;
+	color: #fff;
+	font-size: 12px;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transition: ease all 0.5s;
+	-webkit-transition: ease all 0.5s;
+	-ms-transition: ease all 0.5s;
+}
+
+ul li a span:before {
+	content: "";
+	width: 0;
+	height: 0;
+	border-top: 7px solid transparent;
+	border-right: 7px solid #420BA1;
+	border-bottom: 7px solid transparent;
+	position: absolute;
+	left: -6px;
+	top: 50%;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transition: ease all 0.5s;
+	-webkit-transition: ease all 0.5s;
+	-ms-transition: ease all 0.5s;
+}
+
+ul li a:hover span {
+	opacity: 1;
+	visibility: visible;
+}
+
+.form-control:focus {
+	box-shadow: none;
+	border-color: #e6e6e6;
+}
+
+a {
+	cursor: pointer;
 }
 
 /*# sourceMappingURL=App.css.map */
