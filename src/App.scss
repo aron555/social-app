@@ -52,58 +52,6 @@ body {
   }
 }
 
-ul {
-  li {
-	a {
-	  span {
-		opacity: 0;
-		visibility: hidden;
-		position: absolute;
-		left: 120%;
-		top: 50%;
-		background-color: var(--primary);
-		box-shadow: 4px 4px 4px rgb(200 198 198 / 25%);
-		border-radius: 2px;
-		display: inline-block;
-		padding: 6px 19px;
-		color: #fff;
-		font-size: 12px;
-		transform: translateY(-50%);
-		-webkit-transform: translateY(-50%);
-		-ms-transform: translateY(-50%);
-		transition: ease all 0.5s;
-		-webkit-transition: ease all 0.5s;
-		-ms-transition: ease all 0.5s;
-
-		&:before {
-		  content: "";
-		  width: 0;
-		  height: 0;
-		  border-top: 7px solid transparent;
-		  border-right: 7px solid #420BA1;
-		  border-bottom: 7px solid transparent;
-		  position: absolute;
-		  left: -6px;
-		  top: 50%;
-		  transform: translateY(-50%);
-		  -webkit-transform: translateY(-50%);
-		  -ms-transform: translateY(-50%);
-		  transition: ease all 0.5s;
-		  -webkit-transition: ease all 0.5s;
-		  -ms-transition: ease all 0.5s;
-		}
-	  }
-
-	  &:hover {
-		span {
-		  opacity: 1;
-		  visibility: visible;
-		}
-	  }
-	}
-  }
-}
-
 .form-control:focus {
   box-shadow: none;
   border-color: #e6e6e6;

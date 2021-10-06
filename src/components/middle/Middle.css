@@ -40,13 +40,11 @@
 	width: 3rem;
 	height: 3rem;
 }
-
 .chat .chat-header .user-details .avatar > img {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
 }
-
 .chat .chat-header .user-details h5 {
 	font-size: 16px;
 	font-weight: 600;
@@ -54,7 +52,6 @@
 	line-height: 1;
 	color: var(--primary);
 }
-
 .chat .chat-header ul {
 	margin-bottom: 0;
 }
@@ -157,6 +154,33 @@
 	display: -webkit-flex;
 }
 
+.chat .chat-body .messages .file-download {
+	position: relative;
+	background: #FFFFFF;
+	border-radius: 10px;
+	padding: 10px;
+	margin-bottom: 7px;
+}
+
+.chat .chat-body .messages .file-download .file-type {
+	width: 40px;
+	height: 40px;
+	background-color: rgba(0, 87, 255, 0.1);
+	color: #D7BCE8;
+}
+
+.chat .chat-body .messages .file-download .file-details span.file-name {
+	color: #5A078B;
+	display: inline-block;
+	width: 100%;
+}
+
+.chat .chat-body .messages .file-download .file-details span.file-size {
+	color: #909090;
+	display: inline-block;
+	width: 100%;
+}
+
 .chats {
 	display: block;
 	width: 100%;
@@ -169,35 +193,28 @@
 	flex-direction: row-reverse;
 	-webkit-flex-direction: row-reverse;
 }
-
 .chats.chats-right .chat-content {
 	order: 1;
 	-webkit-order: 1;
 }
-
 .chats.chats-right .message-content {
 	background-color: #E8EFFF;
 	color: #232323;
 	border-radius: 20px 20px 0 20px;
 }
-
 .chats.chats-right .chat-time {
 	justify-content: flex-start;
 	-webkit-justify-content: flex-start;
 }
-
 .chats.chats-right .chat-time .time {
 	color: #909090;
 }
-
 .chats.chats-right .chat-time .time svg {
 	color: #A3C2FF;
 }
-
 .chats.chats-right .chat-avatar {
 	padding: 8px 0 0 15px;
 }
-
 .chats.chats-right .chat-action-btns {
 	order: 2;
 	-webkit-order: 2;
@@ -208,12 +225,10 @@
 	justify-content: center;
 	-webkit-justify-content: center;
 }
-
 .chats.chats-right .chat .chat-body .messages .chats.chats-right .chat-action-btns .chat-action-col {
 	width: 100%;
 	text-align: center;
 }
-
 .chats.chats-right .chat-read-col {
 	display: flex;
 	display: -webkit-flex;
@@ -244,6 +259,49 @@
 	color: #fff;
 	font-weight: 500;
 }
+
+.chat-content .download-col {
+	position: relative;
+}
+
+.chat-content .download-col ul {
+	list-style: none;
+	padding: 0;
+	margin: 0 0 5px 0;
+	display: flex;
+	display: -webkit-flex;
+}
+
+.chat-content .download-col ul li {
+	margin: 5px;
+}
+
+.chat-content .download-col ul li .image-download-col {
+	position: relative;
+}
+
+.chat-content .download-col ul li .image-download-col a > img {
+	border: 1px solid transparent;
+}
+
+.chat-content .image-not-download a > img {
+	-webkit-filter: blur(4px);
+	filter: blur(4px);
+	border-color: #000;
+}
+
+.chat-content .download-action {
+	position: absolute;
+	right: 8px;
+	bottom: 8px;
+	line-height: 0;
+}
+
+.chat-content .download-action a {
+	color: #fff;
+	font-size: 10px;
+}
+
 .chat-content .chat-time {
 	display: flex;
 	display: -webkit-flex;
@@ -251,6 +309,7 @@
 	-webkit-align-items: center;
 	margin-bottom: 0;
 }
+
 .chat-content .chat-time .time {
 	color: #fff;
 	margin-top: 2px;
@@ -297,12 +356,10 @@
 	-webkit-transform: translateY(-50%);
 	-ms-transform: translateY(-50%);
 }
-
 .chat-footer form .smile-col svg {
 	font-size: 22px;
 	color: var(--primary);
 }
-
 .chat-footer form .attach-col {
 	position: absolute;
 	top: 50%;
@@ -311,12 +368,10 @@
 	transform: translateY(-50%);
 	-webkit-transform: translateY(-50%);
 }
-
 .chat-footer form .attach-col svg {
 	color: var(--primary);
 	font-size: 20px;
 }
-
 .chat-footer form .form-buttons {
 	display: flex;
 	display: -webkit-flex;
@@ -330,7 +385,6 @@
 	-webkit-transform: translateY(-50%);
 	-ms-transform: translateY(-50%);
 }
-
 .chat-footer form .form-buttons .btn.send-btn {
 	font-size: 20px;
 	padding: 0;
@@ -343,7 +397,6 @@
 	color: #fff !important;
 	background-color: #EE00AB;
 }
-
 .chat-footer form .specker-col {
 	position: absolute;
 	right: 70px;
@@ -352,7 +405,6 @@
 	-webkit-transform: translateY(-50%);
 	-ms-transform: translateY(-50%);
 }
-
 .chat-footer .chat_form {
 	margin-right: 0;
 	background: #FFFFFF;
@@ -369,7 +421,6 @@
 	text-align: center;
 	width: 100%;
 }
-
 .chat-line:before {
 	content: "";
 	position: absolute;

@@ -128,6 +128,9 @@
   color: #939393;
   font-weight: 500;
 }
+.about-media-tabs .member-details ul li + li {
+  margin-top: 15px;
+}
 .about-media-tabs .social-media-col h6, .about-media-tabs .settings-col h6 {
   font-weight: 600;
   color: #000;
@@ -255,6 +258,15 @@
 .report-col ul li .report-col ul li a {
   color: #FF0000;
   padding-left: 25px;
+}
+.report-col ul li .report-col ul li a span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 16px;
+}
+.report-col ul li + li {
+  margin-top: 19px;
 }
 
 .chat-title h4 {

@@ -196,15 +196,32 @@ body .chat_input {
 		color: var(--primary);
 	  }
 
-	  &:before {
-		background-color: var(--third);
-	  }
-
 	  img {
 		width: 100%;
 		height: 100%;
 		object-fit: cover;
 	  }
+	}
+
+	.avatar-away::before, .avatar-offline::before, .avatar-online::before {
+	  content: "";
+	  position: absolute;
+	  display: block;
+	  width: .7rem;
+	  height: .7rem;
+	  border-radius: 50%;
+	  bottom: 0;
+	  right: 2px;
+	  border: 2px solid #fff;
+	  z-index: 9;
+	}
+
+	.avatar-online::before {
+	  background-color: var(--third);
+	}
+
+	.avatar-away::before {
+	  background-color: #FFE600;
 	}
 
 	.users-list-body {

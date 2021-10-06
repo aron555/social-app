@@ -168,6 +168,33 @@
 	  display: flex;
 	  display: -webkit-flex;
 	}
+
+	.file-download {
+	  position: relative;
+	  background: #FFFFFF;
+	  border-radius: 10px;
+	  padding: 10px;
+	  margin-bottom: 7px;
+
+	  .file-type {
+		width: 40px;
+		height: 40px;
+		background-color: rgba(0, 87, 255, 0.1);
+		color: #D7BCE8;
+	  }
+
+	  .file-details span.file-name {
+		color: #5A078B;
+		display: inline-block;
+		width: 100%;
+	  }
+
+	  .file-details span.file-size {
+		color: #909090;
+		display: inline-block;
+		width: 100%;
+	  }
+	}
   }
 }
 
@@ -258,6 +285,48 @@
 	padding: 14px 20px;
 	color: #fff;
 	font-weight: 500;
+  }
+
+  .download-col {
+	position: relative;
+
+	ul {
+	  list-style: none;
+	  padding: 0;
+	  margin: 0 0 5px 0;
+	  display: flex;
+	  display: -webkit-flex;
+
+	  li {
+		margin: 5px;
+
+		.image-download-col {
+		  position: relative;
+
+		  a > img {
+			border: 1px solid transparent;
+		  }
+		}
+	  }
+	}
+  }
+
+  .image-not-download a > img {
+	-webkit-filter: blur(4px);
+	filter: blur(4px);
+	border-color: #000;
+  }
+
+  .download-action {
+	position: absolute;
+	right: 8px;
+	bottom: 8px;
+	line-height: 0;
+
+	a {
+	  color: #fff;
+	  font-size: 10px;
+	}
   }
 
   .chat-time {

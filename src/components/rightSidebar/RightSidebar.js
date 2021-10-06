@@ -23,7 +23,7 @@ export default function RightSidebar() {
 							<div className="chat-title">
 								<h4>Профиль</h4>
 							</div>
-							<div className="contact-close_call text-right">
+							<div className="contact-close_call text-end">
 								<a className="close_profile close_profile4">
 									<Close/>
 								</a>

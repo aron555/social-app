@@ -146,6 +146,10 @@
 		  color: #939393;
 		  font-weight: 500;
 		}
+
+		+ li {
+		  margin-top: 15px;
+		}
 	  }
 	}
   }
@@ -301,6 +305,17 @@
 	  .report-col ul li a {
 		color: #FF0000;
 		padding-left: 25px;
+
+		span {
+		  position: absolute;
+		  left: 0;
+		  top: 0;
+		  font-size: 16px;
+		}
+	  }
+
+	  + li {
+		margin-top: 19px;
 	  }
 	}
   }
