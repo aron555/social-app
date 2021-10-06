@@ -1,10 +1,6 @@
 import React from "react";
 import "./SidebarMenu.css";
 
-import MessageIcon from '@material-ui/icons/esm/Message';
-import GroupIcon from '@material-ui/icons/esm/Group';
-import LibraryBooksIcon from '@material-ui/icons/esm/LibraryBooks';
-import CallIcon from '@material-ui/icons/esm/Call';
 import SettingsIcon from '@material-ui/icons/esm/Settings';
 import GroupAddIcon from '@material-ui/icons/esm/GroupAdd';
 import FlagIcon from "@material-ui/icons/esm/Flag";
@@ -12,50 +8,26 @@ import PowerSettingsNewIcon from "@material-ui/icons/esm/PowerSettingsNew";
 
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faEdit, faMoon, faPlus, faIdCardAlt} from '@fortawesome/free-solid-svg-icons';
+import {Link} from "react-router-dom";
 
+export default function SidebarMenu(props) {
+	console.log(props);
 
-export default function SidebarMenu() {
+	let arLinks = props.routes.map(
+		link => <li><Link className="chat-unread blue" to={link.path}>{link.icon}<span>{link.name}</span></Link></li>
+	)
+
 	return (
 		<div className="sidebarMenu">
 			<div className="logo-col">
-				<a href="/template2/chat/chat-main">
+				<Link to="/">
 					<img src="assets/img/logo.png" alt=""/>
-				</a>
+				</Link>
 			</div>
 			<div className="menus-col">
 				<div className="chat-menus">
 					<ul>
-						<li>
-							<a
-								className="chat-unread blue"
-								href="/template2/chat/chat-main"
-							>
-								<MessageIcon/><span>Чаты</span>
-							</a>
-						</li>
-						<li>
-							<a
-								className="chat-unread pink"
-								href=""
-							>
-								<GroupIcon/><span>Группы</span>
-							</a>
-						</li>
-						<li>
-							<a href="/template2/chat/status">
-								<LibraryBooksIcon/><span>Статус</span>
-							</a>
-						</li>
-						<li>
-							<a href="/template2/chat/audio-call">
-								<CallIcon/><span>Звонки</span>
-							</a>
-						</li>
-						<li>
-							<a href="/template2/chat/settings">
-								<SettingsIcon/><span>Настройки</span>
-							</a>
-						</li>
+						{arLinks}
 					</ul>
 				</div>
 				<div className="bottom-menus">
@@ -93,14 +65,14 @@ export default function SidebarMenu() {
 										<FontAwesomeIcon icon={faIdCardAlt}/>
 									</span>
 								</a>
-								<a className="dropdown-item" href="/template2/chat/settings">
+								<a className="dropdown-item" href="/settings">
 									Настройки
 									<SettingsIcon/>
 								</a>
-								<a href="/template2/chat/archived">В архиве
+								<a href="/archived">В архиве
 									<FlagIcon/>
 								</a>
-								<a className="dropdown-item" href="/template2/chat/login-email">
+								<a className="dropdown-item" href="/login-email">
 									Выход
 									<PowerSettingsNewIcon/>
 								</a>
