@@ -11,7 +11,6 @@ import {faEdit, faMoon, faPlus, faIdCardAlt} from '@fortawesome/free-solid-svg-i
 import {Link} from "react-router-dom";
 
 export default function SidebarMenu(props) {
-	console.log(props);
 
 	let arLinks = props.routes.map(
 		link => <li><Link className="chat-unread blue" to={link.path}>{link.icon}<span>{link.name}</span></Link></li>
@@ -20,7 +19,7 @@ export default function SidebarMenu(props) {
 	return (
 		<div className="sidebarMenu">
 			<div className="logo-col">
-				<Link to="/">
+				<Link to={arLinks[0].path}>
 					<img src="assets/img/logo.png" alt=""/>
 				</Link>
 			</div>

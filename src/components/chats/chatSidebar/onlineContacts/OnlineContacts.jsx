@@ -4,7 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 
-export default function OnlineContacts() {
+export default function OnlineContacts(props) {
 
 	/**
 	 *
@@ -18,13 +18,12 @@ export default function OnlineContacts() {
 		slidesToScroll: 1
 	}
 
-	let onlineUsers = [
-		{id: 1, name: 'Елена', image: 'assets/img/avatar/avatar-8.jpg'},
-		{id: 2, name: 'Принц', image: 'assets/img/avatar/avatar-7.jpg'},
-		{id: 3, name: 'Юля', image: 'assets/img/avatar/avatar-13.jpg'},
-	]
 
-	let onlineUsersElements = onlineUsers.map(ou => <OnlineContact key={ou.id} name={ou.name} image={ou.image}/>);
+	let onlineUsersElements = props.onlineUsers.map(ou => <OnlineContact
+		key={ou.id}
+		name={ou.name}
+		image={ou.image}
+	/>);
 
 	function OnlineContact(props) {
 		return (

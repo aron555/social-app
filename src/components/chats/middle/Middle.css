@@ -146,14 +146,12 @@
 	align-items: flex-start;
 	-webkit-align-items: flex-start;
 }
-
 .chat .chat-body .messages .chats {
 	max-width: 75%;
 	margin-bottom: 1.5rem;
 	display: flex;
 	display: -webkit-flex;
 }
-
 .chat .chat-body .messages .file-download {
 	position: relative;
 	background: #FFFFFF;
@@ -161,20 +159,17 @@
 	padding: 10px;
 	margin-bottom: 7px;
 }
-
 .chat .chat-body .messages .file-download .file-type {
 	width: 40px;
 	height: 40px;
 	background-color: rgba(0, 87, 255, 0.1);
 	color: #D7BCE8;
 }
-
 .chat .chat-body .messages .file-download .file-details span.file-name {
 	color: #5A078B;
 	display: inline-block;
 	width: 100%;
 }
-
 .chat .chat-body .messages .file-download .file-details span.file-size {
 	color: #909090;
 	display: inline-block;
@@ -215,6 +210,7 @@
 .chats.chats-right .chat-avatar {
 	padding: 8px 0 0 15px;
 }
+
 .chats.chats-right .chat-action-btns {
 	order: 2;
 	-webkit-order: 2;
@@ -225,16 +221,22 @@
 	justify-content: center;
 	-webkit-justify-content: center;
 }
-.chats.chats-right .chat .chat-body .messages .chats.chats-right .chat-action-btns .chat-action-col {
+
+.chats.chats-right .chat-action-btns .chat-action-col {
 	width: 100%;
 	text-align: center;
 }
+
 .chats.chats-right .chat-read-col {
 	display: flex;
 	display: -webkit-flex;
 	align-items: flex-end;
 	-webkit-align-items: flex-end;
 	padding-bottom: 22px;
+	color: rgba(93, 93, 93, 0.78);
+}
+
+.chats.chats-right .chat-read-col.read {
 	color: #008024;
 }
 
@@ -259,11 +261,9 @@
 	color: #fff;
 	font-weight: 500;
 }
-
 .chat-content .download-col {
 	position: relative;
 }
-
 .chat-content .download-col ul {
 	list-style: none;
 	padding: 0;
@@ -271,37 +271,30 @@
 	display: flex;
 	display: -webkit-flex;
 }
-
 .chat-content .download-col ul li {
 	margin: 5px;
 }
-
 .chat-content .download-col ul li .image-download-col {
 	position: relative;
 }
-
 .chat-content .download-col ul li .image-download-col a > img {
 	border: 1px solid transparent;
 }
-
 .chat-content .image-not-download a > img {
 	-webkit-filter: blur(4px);
 	filter: blur(4px);
 	border-color: #000;
 }
-
 .chat-content .download-action {
 	position: absolute;
 	right: 8px;
 	bottom: 8px;
 	line-height: 0;
 }
-
 .chat-content .download-action a {
 	color: #fff;
 	font-size: 10px;
 }
-
 .chat-content .chat-time {
 	display: flex;
 	display: -webkit-flex;
@@ -309,7 +302,6 @@
 	-webkit-align-items: center;
 	margin-bottom: 0;
 }
-
 .chat-content .chat-time .time {
 	color: #fff;
 	margin-top: 2px;

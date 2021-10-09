@@ -16,7 +16,7 @@ import ChatBody from "./chatBody/ChatBody";
 import ChatSearch from "./chatSearch/ChatSearch";
 import ChatFooter from "./chatFooter/ChatFooter";
 
-export default function Middle() {
+export default function Middle(props) {
 	return (
 		<div id="middle" className="chat">
 			<div className="slimScrollDiv">
@@ -104,7 +104,7 @@ export default function Middle() {
 						</div>
 						<ChatSearch/>
 					</div>
-					<ChatBody/>
+					<ChatBody users={props.users} messages={props.messages} chats={props.chats}/>
 				</div>
 			</div>
 			<ChatFooter/>

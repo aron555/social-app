@@ -16,7 +16,7 @@ import GroupBody from "./groupBody/GroupBody";
 import GroupSearch from "./groupSearch/GroupSearch";
 import GroupFooter from "./groupFooter/GroupFooter";
 
-export default function GroupMiddle() {
+export default function GroupMiddle(props) {
 	return (
 		<div id="middle" className="chat">
 			<div className="slimScrollDiv">
@@ -104,7 +104,7 @@ export default function GroupMiddle() {
 						</div>
 						<GroupSearch/>
 					</div>
-					<GroupBody/>
+					<GroupBody users={props.users} messages={props.messages} chats={props.chats}/>
 				</div>
 			</div>
 			<GroupFooter/>

@@ -4,11 +4,11 @@ import Middle from "./middle/Middle";
 import RightSidebar from "./rightSidebar/RightSidebar";
 
 
-export default function Chats() {
+export default function Chats(props) {
 	return (
 		<React.Fragment>
-			<ChatSidebar/>
-			<Middle/>
+			<ChatSidebar onlineUsers={props.onlineUsers} recentChats={props.recentChats}/>
+			<Middle users={props.users} messages={props.messages} chats={props.chats}/>
 			<RightSidebar/>
 		</React.Fragment>
 	)

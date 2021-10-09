@@ -12,7 +12,7 @@ import SidebarBody from "./sidebarBody/SidebarBody";
 import SearchChat from "./searchChat/SearchChat";
 
 
-export default function ChatSidebar() {
+export default function ChatSidebar(props) {
 	return (
 		<div className="sidebar-group left-sidebar chat_sidebar">
 			<div className="slimScrollDiv">
@@ -39,8 +39,8 @@ export default function ChatSidebar() {
 								</div>
 							</div>
 							<SearchChat/>
-							<OnlineContacts/>
-							<SidebarBody/>
+							<OnlineContacts onlineUsers={props.onlineUsers}/>
+							<SidebarBody recentChats={props.recentChats}/>
 						</div>
 					</div>
 				</div>

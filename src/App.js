@@ -23,41 +23,50 @@ import LibraryBooksIcon from '@material-ui/icons/esm/LibraryBooks';
 import CallIcon from '@material-ui/icons/esm/Call';
 import SettingsIcon from '@material-ui/icons/esm/Settings';
 
-const routes = [
-	{
-		name: 'Чаты',
-		icon: <MessageIcon/>,
-		path: "/",
-		exact: true,
-		component: () => <Chats/>,
-	},
-	{
-		name: 'Группы',
-		icon: <GroupIcon/>,
-		path: "/groups",
-		component: () => <Groups/>,
-	},
-	{
-		name: 'Статус',
-		icon: <LibraryBooksIcon/>,
-		path: "/status",
-		component: () => <Status/>,
-	},
-	{
-		name: 'Звонки',
-		icon: <CallIcon/>,
-		path: "/audio-call",
-		component: () => <Calls/>,
-	},
-	{
-		name: 'Настройки',
-		icon: <SettingsIcon/>,
-		path: "/settings",
-		component: () => <Settings/>,
-	}
-];
 
-export default function App() {
+export default function App(props) {
+	const pathCustom = '';
+	// const pathCustom = '/reactchatapp';
+
+	const routes = [
+		{
+			name: 'Чаты',
+			icon: <MessageIcon/>,
+			path: pathCustom + "/",
+			exact: true,
+			component: () => <Chats
+				users={props.users}
+				messages={props.messages}
+				chats={props.chats}
+				onlineUsers={props.onlineUsers}
+				recentChats={props.recentChats}
+			/>,
+		},
+		{
+			name: 'Группы',
+			icon: <GroupIcon/>,
+			path: pathCustom + "/groups",
+			component: () => <Groups users={props.users} messages={props.messages} chats={props.chats}/>,
+		},
+		{
+			name: 'Статус',
+			icon: <LibraryBooksIcon/>,
+			path: pathCustom + "/status",
+			component: () => <Status/>,
+		},
+		{
+			name: 'Звонки',
+			icon: <CallIcon/>,
+			path: pathCustom + "/audio-call",
+			component: () => <Calls/>,
+		},
+		{
+			name: 'Настройки',
+			icon: <SettingsIcon/>,
+			path: pathCustom + "/settings",
+			component: () => <Settings/>,
+		}
+	];
 	return (
 		<Router>
 			<div className="App">

@@ -247,11 +247,11 @@
 	-webkit-flex-wrap: wrap;
 	justify-content: center;
 	-webkit-justify-content: center;
-  }
 
-  .chat .chat-body .messages .chats.chats-right .chat-action-btns .chat-action-col {
-	width: 100%;
-	text-align: center;
+	.chat-action-col {
+	  width: 100%;
+	  text-align: center;
+	}
   }
 
   .chat-read-col {
@@ -260,7 +260,11 @@
 	align-items: flex-end;
 	-webkit-align-items: flex-end;
 	padding-bottom: 22px;
-	color: #008024;
+	color: rgba(93, 93, 93, 0.78);
+
+	&.read {
+	  color: #008024;
+	}
   }
 }
 
