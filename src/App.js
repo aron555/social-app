@@ -35,18 +35,19 @@ export default function App(props) {
 			path: pathCustom + "/",
 			exact: true,
 			component: () => <Chats
-				users={props.users}
-				messages={props.messages}
-				chats={props.chats}
-				onlineUsers={props.onlineUsers}
-				recentChats={props.recentChats}
+				users={props.state.users}
+				messages={props.state.messages}
+				chats={props.state.chats}
+				onlineUsers={props.state.onlineUsers}
+				recentChats={props.state.recentChats}
 			/>,
 		},
 		{
 			name: 'Группы',
 			icon: <GroupIcon/>,
 			path: pathCustom + "/groups",
-			component: () => <Groups users={props.users} messages={props.messages} chats={props.chats}/>,
+			component: () => <Groups users={props.state.users} messages={props.state.messages}
+									 chats={props.state.chats}/>,
 		},
 		{
 			name: 'Статус',
