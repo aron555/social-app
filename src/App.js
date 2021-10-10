@@ -40,6 +40,7 @@ export default function App(props) {
 				chats={props.state.chats}
 				onlineUsers={props.state.onlineUsers}
 				recentChats={props.state.recentChats}
+				addPost={props.addPost}
 			/>,
 		},
 		{

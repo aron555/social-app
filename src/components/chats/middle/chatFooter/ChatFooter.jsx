@@ -21,7 +21,7 @@ export default function ChatFooter() {
 				<input type="text" placeholder="Введите сообщение....."
 					   className="form-control chat_form"/>
 				<div className="form-buttons">
-					<button type="submit" className="btn send-btn">
+					<button type="submit" className="btn send-btn" onClick="">
 						<Send/>
 					</button>
 				</div>

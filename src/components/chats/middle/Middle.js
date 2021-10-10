@@ -107,7 +107,7 @@ export default function Middle(props) {
 					<ChatBody users={props.users} messages={props.messages} chats={props.chats}/>
 				</div>
 			</div>
-			<ChatFooter/>
+			<ChatFooter addPost={props.addPost}/>
 		</div>
 	)
 }

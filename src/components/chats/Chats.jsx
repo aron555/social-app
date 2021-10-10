@@ -8,7 +8,7 @@ export default function Chats(props) {
 	return (
 		<React.Fragment>
 			<ChatSidebar onlineUsers={props.onlineUsers} recentChats={props.recentChats}/>
-			<Middle users={props.users} messages={props.messages} chats={props.chats}/>
+			<Middle users={props.users} messages={props.messages} chats={props.chats} addPost={props.addPost}/>
 			<RightSidebar/>
 		</React.Fragment>
 	)
