@@ -1,5 +1,5 @@
-import React from "react";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import React from 'react';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {
 	faClock,
 	faCloudDownloadAlt,
@@ -8,8 +8,8 @@ import {
 	faFileArchive,
 	faShare,
 	faTrashAlt
-} from "@fortawesome/free-solid-svg-icons";
-import {DoneAll, Save} from "@material-ui/icons";
+} from '@fortawesome/free-solid-svg-icons';
+import {DoneAll, Save} from '@material-ui/icons';
 
 
 export default function GroupBody(props) {
@@ -26,7 +26,7 @@ export default function GroupBody(props) {
 
 	function Chats(props) {
 		return (
-			<div className={(props.users[props.user].isProprietor) ? "chats chats-right" : "chats"}>
+			<div className={(props.users[props.user].isProprietor) ? 'chats chats-right' : 'chats'}>
 				<div className="chat-avatar">
 					<img
 						src={props.users[props.user].image}

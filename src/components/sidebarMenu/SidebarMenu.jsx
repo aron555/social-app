@@ -1,17 +1,16 @@
-import React from "react";
-import "./SidebarMenu.css";
+import React from 'react';
+import './SidebarMenu.css';
 
 import SettingsIcon from '@material-ui/icons/esm/Settings';
 import GroupAddIcon from '@material-ui/icons/esm/GroupAdd';
-import FlagIcon from "@material-ui/icons/esm/Flag";
-import PowerSettingsNewIcon from "@material-ui/icons/esm/PowerSettingsNew";
+import FlagIcon from '@material-ui/icons/esm/Flag';
+import PowerSettingsNewIcon from '@material-ui/icons/esm/PowerSettingsNew';
 
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faEdit, faMoon, faPlus, faIdCardAlt} from '@fortawesome/free-solid-svg-icons';
-import {Link} from "react-router-dom";
+import {Link} from 'react-router-dom';
 
 export default function SidebarMenu(props) {
-
 	let arLinks = props.routes.map(
 		link => <li><Link className="chat-unread blue" to={link.path}>{link.icon}<span>{link.name}</span></Link></li>
 	)
@@ -58,8 +57,7 @@ export default function SidebarMenu(props) {
 										<FontAwesomeIcon icon={faEdit}/>
 									</span>
 								</a>
-								<a
-									className="dropdown-item">Profile
+								<a className="dropdown-item">Profile
 									<span className="profile-icon-col">
 										<FontAwesomeIcon icon={faIdCardAlt}/>
 									</span>

@@ -1,15 +1,15 @@
-import React from "react";
-import "./ChatSidebar.css";
+import React from 'react';
+import './ChatSidebar.css';
 
-import OnlineContacts from "./onlineContacts/OnlineContacts";
+import OnlineContacts from './onlineContacts/OnlineContacts';
 
 import GroupIcon from '@material-ui/icons/esm/Group';
 
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faPlus} from '@fortawesome/free-solid-svg-icons';
 
-import SidebarBody from "./sidebarBody/SidebarBody";
-import SearchChat from "./searchChat/SearchChat";
+import SidebarBody from './sidebarBody/SidebarBody';
+import SearchChat from './searchChat/SearchChat';
 
 
 export default function ChatSidebar(props) {

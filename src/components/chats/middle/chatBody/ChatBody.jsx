@@ -1,5 +1,5 @@
-import React from "react";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import React from 'react';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {
 	faClock,
 	faCloudDownloadAlt,
@@ -8,8 +8,8 @@ import {
 	faFileArchive,
 	faShare,
 	faTrashAlt
-} from "@fortawesome/free-solid-svg-icons";
-import {DoneAll, Save} from "@material-ui/icons";
+} from '@fortawesome/free-solid-svg-icons';
+import {DoneAll, Save} from '@material-ui/icons';
 
 export default function ChatBody(props) {
 

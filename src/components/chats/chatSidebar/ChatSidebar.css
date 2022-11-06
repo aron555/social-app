@@ -166,61 +166,55 @@ body .chat_input {
 .user-list li .avatar .letter-avatar {
   width: 45px;
   height: 45px;
-  border-radius: 45px;
-  margin-right: 0.8rem;
-  margin-bottom: 0;
-  position: relative;
-  display: flex;
-  display: -webkit-flex;
-  align-items: center;
-  -webkit-align-items: center;
-  justify-content: center;
-  -webkit-justify-content: center;
-	background-color: #E8DBFF;
-	font-size: 16px;
-	font-weight: 600;
-	color: var(--primary);
+    border-radius: 45px;
+    margin-right: 0.8rem;
+    margin-bottom: 0;
+    position: relative;
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    -webkit-align-items: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+    background-color: #E8DBFF;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--primary);
 }
-
 .user-list li .avatar img {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
-
 .user-list li .avatar-away::before, .user-list li .avatar-offline::before, .user-list li .avatar-online::before {
-	content: "";
-	position: absolute;
-	display: block;
-	width: 0.7rem;
-	height: 0.7rem;
-	border-radius: 50%;
-	bottom: 0;
-	right: 2px;
-	border: 2px solid #fff;
-	z-index: 9;
+    content: "";
+    position: absolute;
+    display: block;
+    width: 0.7rem;
+    height: 0.7rem;
+    border-radius: 50%;
+    bottom: 0;
+    right: 2px;
+    border: 2px solid #fff;
+    z-index: 9;
 }
-
 .user-list li .avatar-online::before {
-	background-color: var(--third);
+    background-color: var(--third);
 }
-
 .user-list li .avatar-away::before {
-	background-color: #FFE600;
+    background-color: #FFE600;
 }
-
 .user-list li .users-list-body {
-	flex: 1;
-	position: relative;
-	min-width: 0;
-	display: flex;
+    flex: 1;
+    position: relative;
+    min-width: 0;
+    display: flex;
 }
-
 .user-list li .users-list-body > div:first-child {
-	min-width: 0;
-	display: flex;
-	flex-direction: column;
-  flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
 }
 .user-list li .users-list-body h5 {
   white-space: nowrap;

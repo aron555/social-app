@@ -46,9 +46,9 @@ body {
   overflow: hidden;
 
   .content {
-	display: flex;
-	display: -webkit-flex;
-	width: 100%;
+    display: flex;
+    display: -webkit-flex;
+    width: 100%;
   }
 }
 
@@ -66,18 +66,18 @@ a {
   font-weight: 500;
 
   &:before {
-	content: "";
-	position: absolute;
-	left: 50%;
-	transform: translateX(-50%);
-	-webkit-transform: translateX(-50%);
-	-ms-transform: translateX(-50%);
-	bottom: -5px;
-	background-color: #49E073;
-	width: 10px;
-	height: 10px;
-	border: 2px solid #fff;
-	border-radius: 50px;
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    bottom: -5px;
+    background-color: #49E073;
+    width: 10px;
+    height: 10px;
+    border: 2px solid #fff;
+    border-radius: 50px;
   }
 }
 
@@ -91,24 +91,24 @@ a {
   padding: 0;
 
   .dropdown-item {
-	margin: 8px 0;
-	position: relative;
-	font-size: 14px;
-	cursor: pointer;
-	padding: 7px 14px;
-	font-weight: 500;
-	color: #232323;
+    margin: 8px 0;
+    position: relative;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 7px 14px;
+    font-weight: 500;
+    color: #232323;
 
-	span {
-	  position: absolute;
-	  right: 14px;
-	  top: 50%;
-	  transform: translateY(-50%);
-	  -webkit-transform: translateY(-50%);
-	  -ms-transform: translateY(-50%);
-	  float: right;
-	  font-size: 18px;
-	  color: var(--primary);
-	}
+    span {
+      position: absolute;
+      right: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      float: right;
+      font-size: 18px;
+      color: var(--primary);
+    }
   }
 }

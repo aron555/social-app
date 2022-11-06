@@ -1,0 +1,214 @@
+.sidebarMenu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 85px;
+    background-color: #fff;
+    box-shadow: 0 4px 4px rgba(66, 11, 161, 0.2);
+    z-index: 999;
+    padding: 20px;
+}
+
+.sidebarMenu .logo-col {
+    text-align: center;
+}
+
+.sidebarMenu .menus-col {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    height: calc(100vh - 76px);
+}
+
+.sidebarMenu .chat-menus {
+    margin-top: 50px;
+}
+
+.sidebarMenu .chat-menus ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebarMenu .chat-menus ul li {
+    display: block;
+    position: relative;
+}
+
+.sidebarMenu .chat-menus ul li + li {
+    margin-top: 30px;
+}
+
+.sidebarMenu .chat-menus ul li a {
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    -webkit-align-items: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+    width: 46px;
+    height: 42px;
+    background-color: #F4F4FA;
+    border-radius: 5px;
+}
+
+.sidebarMenu .chat-menus ul li a .MuiSvgIcon-root {
+    color: var(--primary);
+    font-size: 22px;
+    padding: 0;
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    background-color: transparent;
+    box-shadow: none;
+    border-radius: 0;
+    transform: none;
+    -webkit-transform: none;
+    -ms-transform: none;
+    min-width: inherit;
+}
+
+.sidebarMenu .chat-menus ul li a.chat-unread:before {
+    content: "";
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: 5px;
+    height: 5px;
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+.sidebarMenu .chat-menus ul li a.chat-unread.blue:before {
+    background-color: #0057FF;
+}
+
+.sidebarMenu .chat-menus ul li a.chat-unread.pink:before {
+    background-color: #EE00AB;
+}
+
+.sidebarMenu ul li a span {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    left: 120%;
+    top: 50%;
+    background-color: var(--primary);
+    box-shadow: 4px 4px 4px rgba(200, 198, 198, 0.25);
+    border-radius: 2px;
+    display: inline-block;
+    padding: 6px 19px;
+    color: #fff;
+    font-size: 12px;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transition: ease all 0.5s;
+    -webkit-transition: ease all 0.5s;
+    -ms-transition: ease all 0.5s;
+}
+
+.sidebarMenu ul li a span:before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 7px solid transparent;
+    border-right: 7px solid #420BA1;
+    border-bottom: 7px solid transparent;
+    position: absolute;
+    left: -6px;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transition: ease all 0.5s;
+    -webkit-transition: ease all 0.5s;
+    -ms-transition: ease all 0.5s;
+}
+
+.sidebarMenu ul li a:hover span {
+    opacity: 1;
+    visibility: visible;
+}
+
+.bottom-menus {
+    width: 100%;
+    display: flex;
+    display: -webkit-flex;
+    align-self: flex-end;
+    -webkit-align-self: flex-end;
+    justify-content: center;
+    -webkit-justify-content: center;
+}
+
+.bottom-menus ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.bottom-menus ul li {
+    display: block;
+    text-align: center;
+    position: relative;
+}
+
+.bottom-menus ul li + li {
+    margin-top: 30px;
+}
+
+.bottom-menus ul li a {
+    text-align: center;
+}
+
+.bottom-menus ul li a .MuiSvgIcon-root {
+    color: var(--primary);
+}
+
+.bottom-menus .add-contacts-btn {
+    width: 25px;
+    height: 25px;
+    border-radius: 30px;
+    background-color: #EE00AB;
+    color: #fff;
+    font-size: 10px;
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    -webkit-align-items: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+    margin: 0 auto;
+}
+
+.bottom-menus .dark-mode-toggle {
+    width: 35px;
+    height: 32px;
+    background-color: #0057ff;
+    color: white;
+    font-size: 16px;
+    display: -webkit-flex;
+    align-items: center;
+    justify-content: center;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #fbfbfb;
+    border-image: initial;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+.bottom-menus .chat-profile-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 36px;
+}
+
+.bottom-menus .chat-profile-icon img {
+    max-width: 100%;
+    border-radius: 36px;
+    border: 2px solid #EEEEEE;
+}
+
+/*# sourceMappingURL=SidebarMenu.css.map */
