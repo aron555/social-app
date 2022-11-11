@@ -72,6 +72,7 @@ export default function App(props) {
             component: () => <Settings/>,
         }
     ];
+
     return (
         <Router>
             <div className="App">
